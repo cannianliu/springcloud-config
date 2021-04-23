@@ -1,0 +1,36 @@
+spring:
+    profiles:
+        active:dev
+   
+---
+server:
+    port: 2233
+
+#spring配置
+spring:
+  profiles: dev
+  application:
+    name: springcloud-config-client-dev
+
+#Eureka配置,服务注册到哪里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+      
+---
+server:
+    port: 2223
+    
+#spring配置
+spring:
+  profiles: test
+  application:
+    name: springcloud-config-client-test
+
+#Eureka配置,服务注册到哪里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+      
