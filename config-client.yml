@@ -1,10 +1,10 @@
 spring:
-    profiles:
-        active:dev
+  profiles:
+    active: dev
    
 ---
 server:
-    port: 2233
+  port: 2233
 
 #spring配置
 spring:
@@ -20,7 +20,7 @@ eureka:
       
 ---
 server:
-    port: 2223
+  port: 2223
     
 #spring配置
 spring:
